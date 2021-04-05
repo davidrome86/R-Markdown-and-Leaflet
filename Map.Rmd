@@ -1,0 +1,21 @@
+---
+title: "My first map"
+author: "David Romero"
+date: "4/5/2021"
+output: html_document
+---
+
+## MY FIRST MAP
+
+Here we can find two tourist places in the regios where I war born, in case one day you have the possibility of traveling and knowing these beatiful and representativo place in the history of my country.
+
+
+```{r cars}
+library(leaflet)
+ Puente_boy <- c("https://situr.boyaca.gov.co/atractivo-turistico/puente-de-boyaca-2/")
+ Pantano <- c("https://situr.boyaca.gov.co/atractivo-turistico/pantano-de-vargas/")
+ leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat = 5.45042, lng = -73.43032, popup = Puente_boy) %>%
+  addMarkers(lat = 5.7391185, lng = -73.0718554, popup = Pantano)
+```
